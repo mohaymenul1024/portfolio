@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mohaymenul Haque | IT Support, Networking & Technical Operations</title>
+<meta name="description" content="Portfolio of Mohaymenul Haque, Computer Science and Engineering graduate in IT support, networking and ATM/CRM technical operations.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🖥️</text></svg>">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#eef6f7;--ink:#10263b;--muted:#4f6478;--teal:#0e7c86;--deep:#0a4f66;--sky:#8ccfe8;--gold:#f4b942;--card:rgba(255,255,255,.7);--line:rgba(16,38,59,.09)}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;scroll-padding-top:80px}
+body{background:var(--bg);color:var(--ink);font:400 17px/1.7 'DM Sans',system-ui,sans-serif;overflow-x:hidden}
+h1,h2,h3{font-family:'Outfit',system-ui,sans-serif;line-height:1.15}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1100px;margin:0 auto;padding:0 24px}
+section{padding:80px 0}
+h2{font-size:clamp(1.9rem,4vw,2.6rem);font-weight:700;letter-spacing:-.02em}
+h2+p{color:var(--muted);margin:10px 0 34px;max-width:58ch}
+:focus-visible{outline:3px solid var(--gold);outline-offset:3px;border-radius:6px}
+
+/* animated background */
+.bg{position:fixed;inset:0;z-index:-1;overflow:hidden;background:linear-gradient(160deg,#e9f5f6,#f6f9ef 60%,#eaf3fb)}
+.bg i{position:absolute;border-radius:50%;filter:blur(70px);opacity:.55;animation:drift 22s ease-in-out infinite alternate}
+.bg i:nth-child(1){width:520px;height:520px;background:var(--sky);top:-140px;left:-120px}
+.bg i:nth-child(2){width:460px;height:460px;background:#7fd6c4;bottom:-120px;right:-100px;animation-duration:28s}
+.bg i:nth-child(3){width:340px;height:340px;background:var(--gold);opacity:.35;top:38%;left:52%;animation-duration:34s}
+@keyframes drift{to{transform:translate(90px,60px) scale(1.15)}}
+.progress{position:fixed;top:0;left:0;height:4px;width:0;background:linear-gradient(90deg,var(--teal),var(--gold));z-index:50}
+
+/* nav */
+nav{position:sticky;top:12px;z-index:20;margin:12px auto 0;max-width:1052px;width:calc(100% - 24px);border-radius:999px;background:rgba(255,255,255,.75);backdrop-filter:blur(14px);border:1px solid var(--line);box-shadow:0 8px 30px -12px rgba(16,38,59,.25)}
+nav .in{display:flex;align-items:center;justify-content:space-between;padding:8px 10px 8px 22px}
+.logo{font:700 1.1rem 'Outfit',sans-serif}
+.links{display:flex;gap:4px;font-size:.92rem;font-weight:500}
+.links a{padding:8px 14px;border-radius:999px;color:var(--muted);transition:.2s}
+.links a:hover,.links a.on{background:var(--teal);color:#fff}
+#menu{display:none;background:var(--teal);color:#fff;border:0;width:40px;height:40px;border-radius:50%;font-size:1.1rem;cursor:pointer}
+
+/* hero */
+.hero{padding:70px 0 40px}
+.hero .wrap{display:grid;grid-template-columns:1.15fr .85fr;gap:40px;align-items:center}
+.pill{display:inline-block;background:#fff;border:1px solid var(--line);border-radius:999px;padding:6px 16px;font-size:.88rem;font-weight:500;color:var(--deep);margin-bottom:18px}
+.pill::before{content:"";display:inline-block;width:8px;height:8px;border-radius:50%;background:#2fb872;margin-right:8px}
+h1{font-size:clamp(2.7rem,7vw,4.6rem);font-weight:800;letter-spacing:-.035em;color:var(--deep)}
+.role{font:600 1.25rem 'Outfit',sans-serif;margin:14px 0;color:var(--teal);min-height:1.6em}
+.lead{color:var(--muted);max-width:52ch;margin-bottom:28px}
+.btns{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-block;padding:13px 26px;border-radius:999px;font:600 .96rem 'DM Sans',sans-serif;border:2px solid var(--deep);color:var(--deep);background:transparent;cursor:pointer;transition:.25s}
+.btn:hover{transform:translateY(-3px);box-shadow:0 10px 22px -10px rgba(10,79,102,.5)}
+.btn.fill{background:var(--deep);color:#fff}
+.photo{position:relative;justify-self:center;width:min(340px,80vw);aspect-ratio:1}
+.photo img{width:100%;height:100%;object-fit:cover;object-position:top;border:6px solid #fff;box-shadow:0 30px 60px -20px rgba(10,79,102,.45);animation:morph 12s ease-in-out infinite;border-radius:42% 58% 55% 45%/50% 42% 58% 50%}
+@keyframes morph{50%{border-radius:58% 42% 40% 60%/42% 58% 42% 58%}}
+.chip{position:absolute;background:#fff;border-radius:14px;padding:9px 14px;font-size:.82rem;font-weight:700;color:var(--deep);box-shadow:0 12px 28px -12px rgba(16,38,59,.35);animation:bob 5s ease-in-out infinite alternate}
+.chip small{display:block;font-weight:500;color:var(--muted)}
+.c1{top:6%;left:-18%}.c2{bottom:14%;right:-14%;animation-delay:-2s}.c3{bottom:-3%;left:4%;animation-delay:-3.5s}
+@keyframes bob{to{transform:translateY(-12px)}}
+
+/* cards */
+.card{background:var(--card);backdrop-filter:blur(10px);border:1px solid var(--line);border-radius:22px;padding:26px;box-shadow:0 14px 34px -22px rgba(16,38,59,.35)}
+.grid2{display:grid;grid-template-columns:1.3fr 1fr;gap:30px;align-items:start}
+.about p{color:var(--muted)}.about p+p{margin-top:14px}.about b{color:var(--ink)}
+.stats{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.stat{padding:20px;text-align:center}
+.stat b{display:block;font:800 2.3rem 'Outfit',sans-serif;color:var(--teal)}
+.stat span{font-size:.85rem;color:var(--muted);line-height:1.3;display:block}
+
+/* skills */
+.tabs{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:22px}
+.tab{border:1px solid var(--line);background:#fff;padding:9px 20px;border-radius:999px;font:500 .92rem 'DM Sans',sans-serif;cursor:pointer;color:var(--muted);transition:.2s}
+.tab:hover{border-color:var(--teal)}
+.tab.on{background:var(--teal);color:#fff;border-color:var(--teal)}
+.skills{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:14px}
+.skill{display:flex;gap:14px;align-items:center;padding:16px 18px;border-radius:16px;animation:pop .35s}
+.skill span:first-child{font-size:1.5rem;width:44px;height:44px;border-radius:12px;background:#fff;display:grid;place-items:center;flex:none}
+.skill b{display:block;font-size:.98rem}.skill small{color:var(--muted);font-size:.8rem;line-height:1.3;display:block}
+@keyframes pop{from{opacity:0;transform:scale(.94)}}
+
+/* timeline & projects */
+.job{border-left:5px solid var(--gold)}
+.job h3{font-size:1.4rem}.job .co{color:var(--teal)}
+.date{font-size:.88rem;color:var(--muted);margin:4px 0 14px;font-weight:500}
+ul{padding-left:20px;color:var(--muted)}li{margin-bottom:6px}li::marker{color:var(--teal)}
+.proj{display:grid;grid-template-columns:repeat(auto-fit,minmax(340px,1fr));gap:20px}
+.proj h3{font-size:1.25rem;margin:10px 0}
+.ico{font-size:2rem}
+.more{margin-top:14px;background:none;border:0;color:var(--teal);font:700 .92rem 'DM Sans',sans-serif;cursor:pointer;padding:0}
+.detail{display:none;margin-top:12px}.open .detail{display:block}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.tags span{background:#fff;border:1px solid var(--line);border-radius:999px;padding:4px 12px;font-size:.8rem;font-weight:500;color:var(--deep)}
+
+/* certificates */
+.certs{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:20px}
+.cert{padding:0;overflow:hidden;cursor:pointer;transition:.25s;text-align:left;font:inherit;color:inherit;width:100%}
+.cert:hover{transform:translateY(-6px)}
+.thumb{aspect-ratio:4/3;background:linear-gradient(135deg,#dff1f4,#fdf3d9);display:grid;place-items:center;overflow:hidden;position:relative}
+.thumb img{width:100%;height:100%;object-fit:cover}
+.ph{text-align:center;padding:16px;color:var(--deep);font-size:.85rem}.ph b{display:block;font-size:2.4rem}
+.ph code{display:block;margin-top:6px;font-size:.72rem;color:var(--muted);word-break:break-all}
+.cert .meta{padding:16px 20px}.cert h3{font-size:1.05rem}.cert p{color:var(--muted);font-size:.86rem}
+.lb{position:fixed;inset:0;background:rgba(10,38,55,.88);z-index:60;display:none;align-items:center;justify-content:center;padding:20px;flex-direction:column;gap:14px}
+.lb.on{display:flex}
+.lb img,.lb iframe{max-width:min(94vw,1000px);max-height:76vh;width:100%;border-radius:14px;background:#fff;border:0;height:76vh;object-fit:contain}
+.lb img{height:auto}
+.lb .cap{color:#fff;text-align:center;font-weight:500}
+.lb button{position:absolute;background:#fff;border:0;border-radius:50%;width:46px;height:46px;font-size:1.3rem;cursor:pointer;color:var(--deep)}
+.lbo{background:#fff;color:var(--deep);padding:8px 20px;border-radius:999px;font-weight:700;font-size:.9rem}
+.lb .x{top:18px;right:18px}.lb .p{left:14px;top:50%}.lb .n{right:14px;top:50%}
+
+/* education */
+.edu{display:grid;gap:14px;margin-top:34px}
+.edu .card{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;align-items:center;padding:20px 24px}
+.edu h3{font-size:1.1rem}.edu p{color:var(--muted);font-size:.9rem}
+.grade{background:var(--gold);color:#4a3200;font-weight:700;padding:6px 16px;border-radius:999px;font-size:.88rem}
+
+/* contact */
+.contact{display:grid;grid-template-columns:1fr 1.1fr;gap:26px}
+.info a,.info button{display:flex;gap:14px;align-items:center;padding:14px 0;border:0;border-bottom:1px solid var(--line);background:none;width:100%;text-align:left;font:inherit;color:inherit;cursor:pointer}
+.info a:hover span+div b,.info button:hover span+div b{color:var(--teal)}
+.info span{font-size:1.4rem;width:44px;height:44px;background:#fff;border-radius:12px;display:grid;place-items:center;flex:none}
+.info small{display:block;color:var(--muted);font-size:.8rem;line-height:1.2}.info b{font-weight:500;word-break:break-all}
+form{display:grid;gap:14px}
+input,textarea{width:100%;padding:13px 16px;border-radius:14px;border:1px solid var(--line);background:#fff;font:inherit;color:var(--ink)}
+input:focus,textarea:focus{outline:2px solid var(--teal);border-color:transparent}
+textarea{min-height:130px;resize:vertical}
+footer{padding:30px 0 40px;text-align:center;color:var(--muted);font-size:.88rem}
+.toast{position:fixed;bottom:24px;left:50%;transform:translate(-50%,90px);background:var(--deep);color:#fff;padding:11px 22px;border-radius:999px;font-weight:600;transition:.3s;z-index:70}
+.toast.on{transform:translate(-50%,0)}
+.rv{opacity:0;transform:translateY(22px);transition:.7s}.rv.in{opacity:1;transform:none}
+
+@media(max-width:860px){
+ .hero .wrap,.grid2,.contact{grid-template-columns:1fr}
+ .hero{padding-top:40px}.photo{order:-1}.c1{left:-4%}.c2{right:-4%}
+ #menu{display:block}
+ .links{display:none;position:absolute;top:62px;left:0;right:0;flex-direction:column;background:#fff;border-radius:22px;padding:12px;box-shadow:0 20px 40px -20px rgba(16,38,59,.4)}
+ .links.open{display:flex}
+ .proj{grid-template-columns:1fr}
+ section{padding:56px 0}
+}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div class="bg" aria-hidden="true"><i></i><i></i><i></i></div>
+<div class="progress" id="bar"></div>
+
+<nav><div class="in">
+ <a href="#top" class="logo">Mohaymenul Haque</a>
+ <div class="links" id="links"><a href="#about">About</a><a href="#skills">Skills</a><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#certificates">Skill Certificates</a><a href="#contact">Contact</a></div>
+ <button id="menu" aria-label="Open menu">☰</button>
+</div></nav>
+
+<header class="hero" id="top"><div class="wrap">
+ <div>
+  <span class="pill">Open to IT support and networking roles</span>
+  <h1>Mohaymenul Haque</h1>
+  <p class="role" id="role">IT Support Engineer</p>
+  <p class="lead">Computer Science and Engineering graduate. I keep banking machines, networks and computers running, and I'm building a long-term career in IT support, help desk, networking and system administration.</p>
+  <div class="btns"><a class="btn fill" href="#contact">Hire me</a><a class="btn" href="resume.pdf" download>Download resume</a><a class="btn" href="#certificates">View certificates</a></div>
+ </div>
+ <div class="photo">
+  <img src="Mohaymenul Haque.png" alt="Mohaymenul Haque">
+  <div class="chip c1">20+ CRM units<small>serviced at bank sites</small></div>
+  <div class="chip c2">B.Sc. CSE<small>CGPA 3.55 / 4.00</small></div>
+  <div class="chip c3">Windows and Linux<small>setup and support</small></div>
+ </div>
+</div></header>
+
+<section id="about"><div class="wrap rv">
+ <h2>About me</h2>
+ <p>Hands-on, dependable and always learning.</p>
+ <div class="grid2">
+  <div class="about card">
+   <p>I graduated with a <b>B.Sc. in Computer Science and Engineering</b> from the University of Global Village, Barishal, and trained alongside it through the national NTVQF framework in IT support, computer operation and graphics design.</p>
+   <p>At <b>Armor Bangladesh Limited</b> I install, service and maintain ATM and Cash Recycling Machines, diagnosing hardware and software faults so banking operations don't stop.</p>
+   <p>My research looked at how ransomware behaves on Windows and Linux, which gave me a solid grounding in system monitoring and security.</p>
+  </div>
+  <div class="stats">
+   <div class="card stat"><b data-n="3.55">0</b><span>CGPA out of 4.00</span></div>
+   <div class="card stat"><b data-n="20" data-s="+">0</b><span>CRM units maintained</span></div>
+   <div class="card stat"><b data-n="4">0</b><span>NTVQF certificates</span></div>
+   <div class="card stat"><b data-n="2">0</b><span>Projects built</span></div>
+  </div>
+ </div>
+</div></section>
+
+<section id="skills"><div class="wrap rv">
+ <h2>Skills</h2>
+ <p>Pick a category to filter.</p>
+ <div class="tabs" id="tabs" role="tablist"></div>
+ <div class="skills" id="skills-grid"></div>
+</div></section>
+
+<section id="experience"><div class="wrap rv">
+ <h2>Experience</h2>
+ <p>Field work with banking clients.</p>
+ <div class="card job">
+  <h3>Associate (Support) Engineer, <span class="co">Armor Bangladesh Limited</span></h3>
+  <div class="date">July 2026 – August 2026</div>
+  <ul>
+   <li>Installed, maintained and serviced ATM and Cash Recycling Machine (CRM) systems for banking clients.</li>
+   <li>Diagnosed and resolved hardware and technical issues to keep operations smooth and uninterrupted.</li>
+   <li>Performed preventive maintenance on 20+ Cash Recycling Machine units across client sites.</li>
+  </ul>
+ </div>
+</div></section>
+
+<section id="projects"><div class="wrap rv">
+ <h2>Research & Projects</h2>
+ <p>Research and a hardware-plus-app build. Tap "Show details" to expand.</p>
+ <div class="proj">
+  <article class="card">
+   <div class="ico">🛡️</div>
+   <h3>A Host-Based Behavioral Analysis of Ransomware Activities in Modern Operating Systems</h3>
+   <p style="color:var(--muted)">Studying how ransomware acts on a machine, using controlled experiments.</p>
+   <div class="detail"><ul><li>Conducted controlled system-behaviour experiments on Windows and Linux.</li><li>Monitored system activity with Sysmon and Falco.</li><li>Analysed process and file-system activity through system logs.</li></ul></div>
+   <div class="tags"><span>Sysmon</span><span>Falco</span><span>Windows</span><span>Linux</span></div>
+   <button class="more" aria-expanded="false">Show details</button>
+  </article>
+  <article class="card">
+   <div class="ico">📺</div>
+   <h3>Digital Banner</h3>
+   <p style="color:var(--muted)">An eco-friendly digital advertising system that replaces printed banners.</p>
+   <div class="detail"><ul><li>Developed an eco-friendly digital advertising system.</li><li>Built an Android app using Java and PHP for banner management.</li><li>Integrated a Raspberry Pi with a large digital display.</li></ul></div>
+   <div class="tags"><span>Java</span><span>PHP</span><span>Android</span><span>Raspberry Pi</span></div>
+   <button class="more" aria-expanded="false">Show details</button>
+  </article>
+ </div>
+</div></section>
+
+<section id="certificates"><div class="wrap rv">
+ <h2>Skill Certificates</h2>
+ <p>Nationally recognised training. Click a certificate to view it full size.</p>
+ <div class="certs" id="certs"></div>
+ <div class="edu">
+  <div class="card"><div><h3>B.Sc. in Computer Science and Engineering</h3><p>University of Global Village (UGV), Barishal · 2022 – 2026</p></div><span class="grade">CGPA 3.55 / 4.00</span></div>
+  <div class="card"><div><h3>Higher Secondary Certificate, Science</h3><p>Barishal Govt. Model School &amp; College · 2020</p></div><span class="grade">GPA 4.83 / 5.00</span></div>
+  <div class="card"><div><h3>Secondary School Certificate, Science</h3><p>Karapur Popular Secondary School · 2018</p></div><span class="grade">GPA 4.56 / 5.00</span></div>
+ </div>
+</div></section>
+
+<section id="contact"><div class="wrap rv">
+ <h2>Let's talk</h2>
+ <p>Write a message and your email app will open with it ready to send.</p>
+ <div class="contact">
+  <div class="card info">
+   <a href="mailto:mohaymenul1024@gmail.com"><span>✉️</span><div><small>Email</small><b>mohaymenul1024@gmail.com</b></div></a>
+   <a href="tel:+8801890234407"><span>📞</span><div><small>Phone</small><b>+880 1890-234407</b></div></a>
+   <a href="https://www.linkedin.com/in/mohaymenul-haque" target="_blank" rel="noopener"><span>💼</span><div><small>LinkedIn</small><b>/in/mohaymenul-haque</b></div></a>
+   <button type="button" id="copy"><span>📋</span><div><small>Quick action</small><b>Copy my email</b></div></button>
+  </div>
+  <form class="card" id="form">
+   <input id="fn" placeholder="Your name" required aria-label="Your name">
+   <input id="fe" type="email" placeholder="Your email" required aria-label="Your email">
+   <textarea id="fm" placeholder="Tell me about the role or project" required aria-label="Message"></textarea>
+   <button class="btn fill" type="submit">Send message</button>
+  </form>
+ </div>
+</div></section>
+
+<footer>© <span id="yr"></span> Mohaymenul Haque </footer>
+
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Certificate viewer">
+ <button class="x" aria-label="Close">✕</button><button class="p" aria-label="Previous">‹</button><button class="n" aria-label="Next">›</button>
+ <div id="lbc"></div><div class="cap" id="cap"></div><a class="lbo" id="lbo" target="_blank" rel="noopener">Open in new tab / download</a>
+</div>
+<div class="toast" id="toast" role="status"></div>
+
+<script>
+/* ===== EDIT HERE: certificate files (put them in the "certs" folder). .jpg .png .webp .pdf all work ===== */
+const CERTS=[
+ {t:'IT Support Services, Level 3',o:'National Skills Development Authority (NSDA)',f:'certs/nsda-it-support-l3.pdf'},
+ {t:'IT Support Services, Level 3',o:'Bangladesh Technical Education Board (BTEB)',f:'certs/bteb-it-support-l3.pdf'},
+ {t:'Computer Operation, Level 1',o:'Bangladesh Technical Education Board (BTEB)',f:'certs/bteb-computer-operation-l1.pdf'},
+ {t:'Graphics Design, Level 2',o:'Bangladesh Technical Education Board (BTEB)',f:'certs/bteb-graphics-design-l2.pdf'},
+ {t:'Intensive English Language Course',o:'IELC',f:'certs/ielc.pdf'}
+];
+const SKILLS=[
+ ['support','🎧','Technical support','Helping users solve problems'],['support','🙋','Help desk','Ticketing and customer-facing support'],['support','🔧','Hardware troubleshooting','Diagnosis and repair'],['support','💽','Software troubleshooting','Fixing OS and app issues'],
+ ['network','🌐','TCP/IP','Addressing and protocols'],['network','🔗','LAN / WAN','Building and supporting networks'],['network','📡','Network configuration','Setup and troubleshooting'],
+ ['systems','🪟','Windows','Install, configure, administer'],['systems','🐧','Linux','Install, configure, administer'],['systems','🏧','ATM / CRM servicing','Installation and maintenance'],['systems','🛠️','Preventive maintenance','Keeping machines healthy'],['systems','📹','CCTV installation','Cameras and cabling'],
+ ['security','🛡️','Sysmon','Windows activity monitoring'],['security','🦅','Falco','Linux runtime monitoring'],['security','🔍','Host-based monitoring','Log and behaviour analysis'],
+ ['tools','📄','MS Office','Word, Excel, PowerPoint'],['tools','☁️','Google Workspace','Docs and Sheets']
+];
+const TABS={all:'All',support:'IT support',network:'Networking',systems:'Systems and operations',security:'Security',tools:'Tools'};
+const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
+$('#yr').textContent=new Date().getFullYear();
+const toast=m=>{const e=$('#toast');e.textContent=m;e.classList.add('on');setTimeout(()=>e.classList.remove('on'),2200)};
+
+/* menu, progress bar, active link */
+$('#menu').onclick=()=>$('#links').classList.toggle('open');
+$$('.links a').forEach(a=>a.onclick=()=>$('#links').classList.remove('open'));
+const secs=$$('section'),links=$$('.links a');
+addEventListener('scroll',()=>{
+ const h=document.documentElement;$('#bar').style.width=(h.scrollTop/(h.scrollHeight-h.clientHeight)*100)+'%';
+ let cur='';secs.forEach(s=>{if(s.getBoundingClientRect().top<160)cur=s.id});
+ links.forEach(a=>a.classList.toggle('on',a.getAttribute('href')==='#'+cur));
+},{passive:true});
+
+/* reveal + counters */
+const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+function count(el){const n=+el.dataset.n,s=el.dataset.s||'',d=n%1?2:0;if(reduce){el.textContent=n.toFixed(d)+s;return}
+ let t0;const step=t=>{t0=t0||t;const p=Math.min((t-t0)/1200,1);el.textContent=(n*p).toFixed(d)+s;if(p<1)requestAnimationFrame(step)};requestAnimationFrame(step)}
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');e.target.querySelectorAll('[data-n]').forEach(count);io.unobserve(e.target)}}),{threshold:.1});
+$$('.rv').forEach(el=>io.observe(el));
+
+/* rotating role */
+const roles=['IT Support Engineer','Networking Enthusiast','ATM and CRM Technician','CSE Graduate'];let ri=0;
+if(!reduce)setInterval(()=>{const r=$('#role');r.style.transition='opacity .3s';r.style.opacity=0;setTimeout(()=>{ri=(ri+1)%roles.length;r.textContent=roles[ri];r.style.opacity=1},300)},2600);
+
+/* skills filter */
+function showSkills(cat){
+ $$('.tab').forEach(t=>{const on=t.dataset.c===cat;t.classList.toggle('on',on);t.setAttribute('aria-selected',on)});
+ $('#skills-grid').innerHTML=SKILLS.filter(s=>cat==='all'||s[0]===cat).map(s=>`<div class="card skill"><span>${s[1]}</span><div><b>${s[2]}</b><small>${s[3]}</small></div></div>`).join('');
+}
+$('#tabs').innerHTML=Object.entries(TABS).map(([k,v])=>`<button class="tab" role="tab" data-c="${k}">${v}</button>`).join('');
+$$('.tab').forEach(t=>t.onclick=()=>showSkills(t.dataset.c));showSkills('all');
+
+/* project expand */
+$$('.more').forEach(b=>b.onclick=()=>{const c=b.closest('article'),o=c.classList.toggle('open');b.textContent=o?'Hide details':'Show details';b.setAttribute('aria-expanded',o)});
+
+/* certificates + lightbox */
+const isPdf=f=>/\.pdf$/i.test(f);
+$('#certs').innerHTML=CERTS.map((c,i)=>`<button class="card cert" data-i="${i}"><div class="thumb">${isPdf(c.f)?'<div class="ph"><b>📄</b>PDF certificate<code>Click to view</code></div>':`<img src="${c.f}" alt="${c.t} certificate" loading="lazy">`}</div><div class="meta"><h3>${c.t}</h3><p>${c.o}</p></div></button>`).join('');
+$$('.thumb img').forEach(img=>img.onerror=()=>{img.parentElement.innerHTML=`<div class="ph"><b>🎓</b>Certificate image not added yet<code>${img.getAttribute('src')}</code></div>`});
+let cur=0;
+function open(i){cur=(i+CERTS.length)%CERTS.length;const c=CERTS[cur];
+ $('#lbc').innerHTML=isPdf(c.f)?`<iframe src="${c.f}" title="${c.t}"></iframe>`:`<img src="${c.f}" alt="${c.t}">`;
+ const im=$('#lbc img');if(im)im.onerror=()=>{$('#lbc').innerHTML='<div class="ph" style="background:#fff;border-radius:14px;padding:40px"><b>🎓</b>Add this file to the certs folder:<code>'+c.f+'</code></div>'};
+ $('#cap').textContent=c.t+' · '+c.o;$('#lbo').href=c.f;$('#lb').classList.add('on');document.body.style.overflow='hidden'}
+const close=()=>{$('#lb').classList.remove('on');$('#lbc').innerHTML='';document.body.style.overflow=''};
+$$('.cert').forEach(b=>b.onclick=()=>open(+b.dataset.i));
+$('.lb .x').onclick=close;$('.lb .p').onclick=()=>open(cur-1);$('.lb .n').onclick=()=>open(cur+1);
+$('#lb').onclick=e=>{if(e.target.id==='lb')close()};
+addEventListener('keydown',e=>{if(!$('#lb').classList.contains('on'))return;if(e.key==='Escape')close();if(e.key==='ArrowLeft')open(cur-1);if(e.key==='ArrowRight')open(cur+1)});
+
+/* contact */
+$('#copy').onclick=()=>{const t='mohaymenul1024@gmail.com',ok=()=>toast('Email copied');
+ (navigator.clipboard?navigator.clipboard.writeText(t):Promise.reject()).then(ok).catch(()=>{const i=document.createElement('input');i.value=t;document.body.appendChild(i);i.select();document.execCommand('copy');i.remove();ok()})};
+$('#form').onsubmit=e=>{e.preventDefault();
+ const b=`Hello Mohaymenul,\n\n${$('#fm').value}\n\nFrom: ${$('#fn').value} (${$('#fe').value})`;
+ location.href='mailto:mohaymenul1024@gmail.com?subject='+encodeURIComponent('Portfolio enquiry from '+$('#fn').value)+'&body='+encodeURIComponent(b);toast('Opening your email app')};
+</script>
+</body>
+</html>
